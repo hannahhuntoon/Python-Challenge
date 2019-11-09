@@ -41,7 +41,7 @@ print(f'ELection Results')
 print(f'Total Votes {votes}')
 for count in range(len(uniqueCandidates)):
     print(f'{uniqueCandidates[count]}: {percentages[count]}% ({candidatesVotes[count]})')
-    print(f'Winner: {winner}')
+print(f'Winner: {winner}')
 
 with open ("poll.txt", "w") as output:
         line = (f'The Election Results are as follows: There were {votes} Total Votes  and the winner is {winner} with 63% of votes.')
